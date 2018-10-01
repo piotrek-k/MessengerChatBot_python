@@ -2,10 +2,11 @@
 
 ## Links:
 
-[Facebook app setup](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup)
+[*] [Facebook app setup](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup)
 
-[How webhook (API in Python from this repo) should be done and tested](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup)
+[*] [How webhook (API in Python from this repo) should be done and tested](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup)
 
+[*] [Images, postbacks](https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
 ## Data
 
 Here is what is sent to `\webhook` (POST), when someone writes a message to Facebook Page:
