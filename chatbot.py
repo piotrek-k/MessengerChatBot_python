@@ -11,6 +11,7 @@ app = Flask(__name__)
 def webhook_post():
     """
     This endpoint is where the Messenger Platform will send all webhook events
+    E.g. when someone send message to Page, it will be redirected here.
     """
     data = request.data
     dataDict = json.loads(data)
@@ -20,7 +21,6 @@ def webhook_post():
 
     if fb_object == 'page':
         for e in entries:
-            print("Entry: ", e)
             print(e["messaging"][0])
 
         resp = jsonify(success=True)
