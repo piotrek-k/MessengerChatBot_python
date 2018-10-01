@@ -1,32 +1,35 @@
 # MessengerChatBot
 
-## Links:
+## Tasks:
 
 [*] [Facebook app setup](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup)
 
 [*] [How webhook (API in Python from this repo) should be done and tested](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup)
 
 [*] [Images, postbacks](https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
+
+[ ] Automatic tests
+
 ## Data
 
 Here is what is sent to `\webhook` (POST), when someone writes a message to Facebook Page:
 ```
 {
-   'id':'1710586375891589',
+   'id':'[number]',
    'time':1538421274715,
    'messaging':[
       {
          'sender':{
-            'id':'1219457681420837'
+            'id':'[number]'
          },
          'recipient':{
-            'id':'1710586375891589'
+            'id':'[number]'
          },
          'timestamp':1538421274284,
          'message':{
-            'mid':'FPMMa04XLIErFjR-6919Jva_nUgD6jp0M100ndezMdU_M11lMACCU7iIF8_0l02SVahVhL7D5nseDN7_n68f4A',
+            'mid':'[string]',
             'seq':855684,
-            'text':'************""""'
+            'text':'[typed text]'
          }
       }
    ]
