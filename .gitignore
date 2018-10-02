@@ -71,3 +71,4 @@ __pycache__
 
 # secrets (here are kept keys, don't want to commit that)
 secrets.py
+messenger_chatbot/secrets.py

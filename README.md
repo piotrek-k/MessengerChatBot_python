@@ -1,4 +1,7 @@
 # MessengerChatBot
+Example of Facebook Messenger Bot based on 
+[official tutorial](https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
+ but written in Python
 
 ## Tasks:
 
@@ -8,7 +11,24 @@
 
 [*] [Images, postbacks](https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
 
-[ ] Automatic tests
+[*] Automatic tests
+
+## Usage
+Flask setup:
+```
+export FLASK_APP=hello.py
+flask run
+```
+(`set` instead of `export` on Windows)
+
+Tests:
+```
+pytest
+```
+It also requires to create `secrets.py` where Facebook token will be stored.
+`secrets.py` is not pushed to git repo since it contains sensitive infomation.
+
+`PAGE_ACCESS_TOKEN` global variable for FB Page token.
 
 ## Data
 
