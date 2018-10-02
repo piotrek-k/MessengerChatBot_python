@@ -2,10 +2,12 @@
 Based on: https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup
 """
 
-from flask import Flask, request, jsonify, abort
 import json
-import requests
 import secrets
+
+import requests
+from flask import Flask, request, jsonify, abort
+
 # secrets.py need to contain:
 # secrets.PAGE_ACCESS_TOKEN
 
@@ -64,7 +66,9 @@ def webhook_verfication():
             print("webhook verified")
             return challenge
         else:
-            return "", 403
+            return abort(403, "Token incorrect or mode unknown")
+
+    abort(400, "Webhook verification failed")
 
 def handle_message(sender_psid, received_message):
     """
